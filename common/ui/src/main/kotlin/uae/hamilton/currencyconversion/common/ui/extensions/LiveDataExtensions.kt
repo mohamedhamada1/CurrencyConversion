@@ -1,6 +1,6 @@
-package uk.endclothing.task.commons.ui.extensions
+package uae.hamilton.currencyconversion.common.ui.extensions
 
-import uk.endclothing.task.commons.ui.livedata.SingleMediatorLiveData
+import uae.hamilton.currencyconversion.common.ui.livedata.SingleMediatorLiveData
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 

@@ -1,6 +1,4 @@
-package uk.endclothing.task.commons.ui.base
-
-import uk.endclothing.task.commons.navigation.IS_NAVIGATING_TO_DESTINATION_ARG
+package uae.hamilton.currencyconversion.common.ui.base
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,9 +20,12 @@ abstract class BaseFragment<B : ViewDataBinding, M : ViewModel>(
     lateinit var viewModel: M
     lateinit var viewBinding: B
 
-    protected val isNavigatingToDestination: Boolean
-        get() = arguments?.getBoolean(IS_NAVIGATING_TO_DESTINATION_ARG) ?: false
+    protected val isNavigatingToDestination: Boolean = false
 
+
+    /*protected val isNavigatingToDestination: Boolean
+        get() = arguments?.getBoolean(IS_NAVIGATING_TO_DESTINATION_ARG) ?: false
+*/
     abstract fun onInitDependencyInjection()
 
     abstract fun onInitDataBinding()
@@ -47,6 +48,6 @@ abstract class BaseFragment<B : ViewDataBinding, M : ViewModel>(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onInitDataBinding()
-        arguments?.putBoolean(IS_NAVIGATING_TO_DESTINATION_ARG, false)
+      //  arguments?.putBoolean(IS_NAVIGATING_TO_DESTINATION_ARG, false)
     }
 }

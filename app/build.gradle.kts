@@ -79,7 +79,6 @@ dependencies {
     implementation(project(BuildModules.Commons.NAVIGATION))
     implementation(project(BuildModules.Commons.UI))
     //=== Features ===
-    // implementation(project(BuildModules.Features.CATALOG))
     //===============
     implementation(Dependencies.MATERIAL)
     implementation(Dependencies.CONSTRAIN_LAYOUT)
@@ -93,7 +92,6 @@ dependencies {
 
     coreLibraryDesugaring(Dependencies.DESUGAR_JDK) // this is needed to use Java 8 time library
 
-//    debugImplementation(DebugDependencies.LEAKCANARY)
     addTestsDependencies()
 
 }

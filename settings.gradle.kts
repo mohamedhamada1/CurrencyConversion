@@ -1,3 +1,4 @@
-include(":app","common:ui","common:navigation",":core")
+include(":app", "common:ui",":core","common:navigation")
 rootProject.name = "CurrencyConversion"
 rootProject.buildFileName = "build.gradle.kts"
+include(":common:navigation")

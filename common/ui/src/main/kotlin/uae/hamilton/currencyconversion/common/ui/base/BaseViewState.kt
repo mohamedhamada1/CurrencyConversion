@@ -1,3 +1,3 @@
-package uk.endclothing.task.commons.ui.base
+package uae.hamilton.currencyconversion.common.ui.base
 
 interface BaseViewState

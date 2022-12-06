@@ -1,4 +1,4 @@
-package uk.endclothing.task.commons.ui.livedata
+package uae.hamilton.currencyconversion.common.ui.livedata
 
 import androidx.annotation.MainThread
 import androidx.lifecycle.Lifecycle
@@ -19,15 +19,15 @@ class SingleMediatorLiveData<T> : MediatorLiveData<T>() {
     override fun observe(owner: LifecycleOwner, observer: Observer<in T>) {
         observers[owner] = observer
         super.observe(
-            owner, { t ->
-                if (pending.compareAndSet(true, false)) {
-                    observers.forEach {
-                        if (it.key.lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED))
-                            it.value.onChanged(t)
-                    }
+            owner
+        ) { t ->
+            if (pending.compareAndSet(true, false)) {
+                observers.forEach {
+                    if (it.key.lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED))
+                        it.value.onChanged(t)
                 }
             }
-        )
+        }
     }
 
     @MainThread

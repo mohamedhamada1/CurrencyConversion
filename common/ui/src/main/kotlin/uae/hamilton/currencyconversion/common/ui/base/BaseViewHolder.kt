@@ -1,4 +1,4 @@
-package uk.endclothing.task.commons.ui.base
+package uae.hamilton.currencyconversion.common.ui.base
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding

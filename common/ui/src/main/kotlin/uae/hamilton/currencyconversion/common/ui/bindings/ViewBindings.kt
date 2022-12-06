@@ -1,4 +1,4 @@
-package uk.endclothing.task.commons.ui.bindings
+package uae.hamilton.currencyconversion.common.ui.bindings
 
 
 import android.view.View
