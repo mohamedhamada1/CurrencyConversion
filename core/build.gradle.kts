@@ -16,12 +16,12 @@ android {
         it.addString(
             "BASE_URL",
             when (Flavor.flavor(it.name)) {
-                Flavor.Development -> "https://www.exchangerate-api.com/"
-                Flavor.QA -> "https://www.exchangerate-api.com/"
-                Flavor.Production -> "https://www.exchangerate-api.com/"
+                Flavor.Development -> "https://v6.exchangerate-api.com/"
+                Flavor.QA -> "https://v6.exchangerate-api.com/"
+                Flavor.Production -> "https://v6.exchangerate-api.com/"
             }
         )
- it.addBoolean(
+        it.addBoolean(
             "IS_PROD",
             when (Flavor.flavor(it.name)) {
                 Flavor.Development -> false
@@ -39,6 +39,7 @@ android {
         it.addString("APP_VERSION_NAME", BuildAndroidConfig.VERSION_NAME)
 
         it.addString("KEY_VALUE_DATABASE_NAME", "key-value-db")
+        it.addString("API_KEY", "c611276348c6ef30e745d78e")
     }
 
     defaultConfig {

@@ -1,0 +1,66 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f73bf68d4cd77084d33f8a2062f41116",
+    "entities": [
+      {
+        "tableName": "currency",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`baseCode` TEXT NOT NULL, PRIMARY KEY(`baseCode`))",
+        "fields": [
+          {
+            "fieldPath": "baseCode",
+            "columnName": "baseCode",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "baseCode"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "exchange_rate",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`baseCode` TEXT NOT NULL, `last_call_time` INTEGER NOT NULL, `conversion_rates` TEXT NOT NULL, PRIMARY KEY(`baseCode`))",
+        "fields": [
+          {
+            "fieldPath": "baseCode",
+            "columnName": "baseCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastCallTime",
+            "columnName": "last_call_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "conversionRates",
+            "columnName": "conversion_rates",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "baseCode"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f73bf68d4cd77084d33f8a2062f41116')"
+    ]
+  }
+}

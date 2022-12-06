@@ -1,6 +1,5 @@
 object BuildAndroidConfig {
-    const val APPLICATION_ID = "ae.adres.dari"
-
+    const val APPLICATION_ID = "uae.hamilton.currencyconversion"
     const val BUILD_TOOLS_VERSION = "30.0.3"
     const val COMPILE_SDK_VERSION = 33
     const val MIN_SDK_VERSION = 21
