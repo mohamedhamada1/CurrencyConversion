@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "exchange_rate_flow",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "main_nav_graph",
+    "navigationXmlIds": [
+      "exchange_rate_flow"
+    ],
+    "deepLinks": []
+  }
+]

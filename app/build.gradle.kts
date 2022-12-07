@@ -79,6 +79,7 @@ dependencies {
     implementation(project(BuildModules.Commons.NAVIGATION))
     implementation(project(BuildModules.Commons.UI))
     //=== Features ===
+    implementation(project(BuildModules.Features.EXCHANGE_CONVERTER))
     //===============
     implementation(Dependencies.MATERIAL)
     implementation(Dependencies.CONSTRAIN_LAYOUT)

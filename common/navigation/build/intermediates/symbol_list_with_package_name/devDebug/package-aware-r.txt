@@ -1,1 +1,5 @@
 uae.hamilton.currencyconversion.common.navigation
+id exchange_rate_flow
+id main_nav_graph
+navigation exchange_rate_flow
+navigation main_nav_graph

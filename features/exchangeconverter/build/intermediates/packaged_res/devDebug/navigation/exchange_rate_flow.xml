@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/exchange_rate_flow"
+    app:startDestination="@id/fragmentExchangeSelector">
+
+    <fragment
+        android:id="@+id/fragmentExchangeSelector"
+        android:name="uae.hamilton.exchangeconverter.features.exchangeconverter.exchangesellector.FragmentExchangeSelector"
+        android:label="FragmentExchangeSelector"
+        tools:layout="@layout/fragment_exchange_selector">
+
+        <action
+            android:id="@+id/toConverter"
+            app:destination="@id/fragmentExchangeConverter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentExchangeConverter"
+        android:name="uae.hamilton.exchangeconverter.features.exchangeconverter.exchangeconverter.FragmentExchangeConverter"
+        android:label="fragmentExchangeConverter"
+        tools:layout="@layout/fragment_exchange_converter">
+        <argument
+            android:name="conversionRequest"
+            app:argType="uae.hamilton.exchangeconverter.features.exchangeconverter.ConversionRequest"
+            app:nullable="false" />
+        <action
+            android:id="@+id/toSuccess"
+            app:destination="@id/fragmentSuccessConverter"
+            app:popUpTo="@layout/exchange_rate_flow"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSuccessConverter"
+        android:name="uae.hamilton.exchangeconverter.features.exchangeconverter.success.FragmentConverterSuccess"
+        android:label="fragmentSuccessConverter"
+        tools:layout="@layout/fragment_converter_success">
+        <argument
+            android:name="conversionRequest"
+            app:argType="uae.hamilton.exchangeconverter.features.exchangeconverter.ConversionRequest"
+            app:nullable="false" />
+
+    </fragment>
+
+</navigation>

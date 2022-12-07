@@ -3,6 +3,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import uae.hamilton.currencyconversion.core.di.CoreComponent
 
 
 @Suppress("UNCHECKED_CAST")
@@ -17,10 +18,10 @@ inline fun <reified VM : ViewModel> Fragment.viewModel(
 
     return ViewModelProvider(this, viewModelProviderFactory)[VM::class.java]
 }
-/*
+
 val Fragment.coreComponent: CoreComponent
     get() = requireActivity().coreComponent
-*/
+
 
 
 val Fragment.actualParentFragment: Fragment?

@@ -3,7 +3,7 @@ object BuildModules {
     const val CORE = ":core"
 
     object Features {
-
+        const val EXCHANGE_CONVERTER = ":features:exchangeconverter"
     }
 
     object Commons {

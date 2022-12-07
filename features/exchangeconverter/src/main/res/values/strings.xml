@@ -1,0 +1,18 @@
+<resources>
+    <string name="Amount">Amount</string>
+    <string name="Calculate">Calculate</string>
+    <string name="Convert">Convert</string>
+    <string name="Precedes">Precedes</string>
+    <string name="currency_container">%1$s %2$s </string>
+    <string name="second_left">%s sec left</string>
+    <string name="approve">Approve</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
+    <string name="approval_required">Approval required</string>
+    <string name="confirm_convert_message">You are about to get %1$s for %2$s do you approve this transaction?</string>
+    <string name="restart_session">Restart session</string>
+    <string name="your_session_has_to_restart">Your session will restart</string>
+    <string name="great_now_you_have">great now you have %1$s %2$s  in your account</string>
+    <string name="the_rate_was">the rate was %s</string>
+
+</resources>

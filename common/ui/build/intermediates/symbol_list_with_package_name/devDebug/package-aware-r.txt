@@ -1,13 +1,23 @@
 uae.hamilton.currencyconversion.common.ui
 color black
+color button_primary_txt_color
+color dim_light
 color image_placeholder
 color pebble
 color purple_200
 color purple_500
 color purple_700
+color red
+color red_dark
 color teal_200
 color teal_700
 color white
+drawable bg_button_dari_black_stroke
+drawable bg_button_primary
+drawable bg_button_primary_default
+drawable bg_button_primary_disable
+drawable bg_button_primary_pressed
+drawable bg_dialog
 style Theme_MyApplication
 style Theme_MyApplication_NoActionBar
 style Theme_Task
